@@ -1,5 +1,5 @@
 ARG BUILDPLATFORM
-FROM --platform=${BUILDPLATFORM:-linux/amd64} node:16 as builder
+FROM node:16 as builder
 
 WORKDIR /web
 COPY ./VERSION .
